@@ -1,0 +1,194 @@
+  /**
+   * @author fuguijar.top
+   * core.css
+   */
+
+
+ /* body */
+body{background-color: #ffffff;}
+
+
+
+  /*全局*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    outline: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";
+    box-sizing: border-box;
+  }
+
+  /* h */
+  h1,h2,h3,h4,h5,h6{font-weight:500;line-height:1.1;color:inherit}
+  h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small{font-weight:normal;line-height:1;color:#999}
+  h1,h2,h3{margin-top:20px;margin-bottom:10px}
+  h1 small,h2 small,h3 small,h1 .small,h2 .small,h3 .small{font-size:65%}
+  h4,h5,h6{margin-top:10px;margin-bottom:10px}
+  h4 small,h5 small,h6 small,h4 .small,h5 .small,h6 .small{font-size:75%}
+  h1{font-size:36px}
+  h2{font-size:30px}
+  h3{font-size:24px}
+  h4{font-size:18px}
+  h5{font-size:14px}
+  h6{font-size:12px}
+  /* Table */
+  
+
+  /*默认table */
+  table{width:100%;empty-cells:show;background-color:transparent;border-collapse:collapse;border-spacing:0}
+  table th{text-align:left; font-weight:400}
+  /*带水平线*/
+  table th{font-weight:bold;background-color:#f9f9f9}
+  table th,table td{padding:8px;line-height:20px}
+  table td{text-align:left} 
+  table tbody + tbody{border-top:2px solid #ddd}
+  table {background-color:#fff}
+  /*带横向分割线*/
+  table{border-top:1px solid #ddd}
+  table th,table td{border-bottom:1px solid #ddd}
+  /*th带背景*/
+  table-bg thead th{background-color:#F5FAFE}
+  /*带外边框*/
+  table{border:1px solid #ddd;border-collapse:separate;*border-collapse:collapse;border-left:0}
+  table th,table td{border-left:1px solid #ddd}
+  table{border-bottom:0}
+  /* 居中 c*/
+  table[c] thead tr th{text-align: center;}
+  table[c] tbody tr td{text-align: center;}
+  table thead[c] tr th{text-align: center;}
+  table tbody[c] tr td{text-align: center;}
+  table th[c],td[c] {text-align: center;}
+
+   /* 居右  r*/
+   table[r] thead tr th{text-align: right;}
+   table[r] tbody tr td{text-align: right;}
+   table thead[r] tr th{text-align: right;}
+   table tbody[r] tr td{text-align: right;}
+   table th[r],td[r] {text-align: right;}
+   /* 隔行变色 odd */
+   table[odd] tr:nth-child(odd){background:#f9f9f9;}
+   /* 隔行变色 even */
+   table[even] tr:nth-child(even){background:#f9f9f9;}
+   /*鼠标悬停样式*/
+   table[hover] tbody tr:hover td,table[hover] tbody tr:hover th{background-color: #f5f5f5}
+  
+  
+
+
+button[blue],input[blue]{
+  background-color: #3388FF !important;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px 13px;
+}
+button[blue]:active{background:#0066CC  !important;}
+input[blue]:active{background:#0066CC ;} 
+
+
+/* red */
+
+button,input[type=submit],input[type=button]{
+    display:inline-block;
+    box-sizing:border-box;
+    cursor:pointer;
+    text-align:center;
+    font-weight:400;
+    white-space:nowrap;
+    vertical-align: middle;
+    -moz-padding-start:npx;
+    -moz-padding-end:npx;border:solid 1px #ddd; 
+    background-color:#fff; width:auto;*zoom:1;
+    overflow:visible;
+    -webkit-transition:background-color .1s linear;
+    -moz-transition:background-color .1s linear;
+    -o-transition:background-color .1s linear;
+    transition:background-color .1s linear;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+    line-height: normal !important;
+    outline: none;
+    font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";
+    font-size: 12px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: normal !important;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 31px;
+    *height: auto;
+    line-height: 1.42857;
+    padding: 4px 12px;
+    }
+    
+
+  button:hover{background-color: rgb(199, 199, 199);border: none;padding: 5px 13px;}
+  button:active{background-color:#c7c7c7;border-color:#c7c7c7}
+
+
+  input[type=submit]:hover{background-color:#c7c7c7;border-color:#c7c7c7}
+  input[type=submit]:active{background-color:#c7c7c7;border-color:#c7c7c7} 
+
+  input[type=button]:hover{background-color:#c7c7c7;border-color:#c7c7c7}
+  input[type=button]:active{background-color:#c7c7c7;border-color:#c7c7c7} 
+
+
+
+  /* Form */
+input[type=text]{
+  font-size: 16px;
+    height: 36px;
+    -webkit-appearance: none;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: solid 1px #ddd;
+    width: 100%;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+    font-size: 14px;
+    height: 31px;
+    *height: auto;
+    line-height: 1.42857;
+    padding: 4px 10px;
+    background-color: white !important;
+    font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";
+    font-size: 12px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    overflow: visible;
+    vertical-align: middle;
+    outline: none;
+}
+input[type=text]:hover, textarea:hover {
+  border: solid 1px #3bb4f2;
+  border-color: rgba(82,168,236,0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+    2.0
+    完善form表单    
+
+*/
+
+
+
+
